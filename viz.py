@@ -8,7 +8,7 @@ G = nx.DiGraph()
 
 
 # add nodes and edges based on our CSV file
-with open('badger-orgs.csv', 'r') as f:
+with open('badger-mints.csv', 'r') as f:
     data = csv.reader(f)
     headers = next(data)
 # iterate over each row adding nodes for operator (first column) and target (second column)
@@ -28,4 +28,4 @@ G_edges = G.number_of_edges()
 print("Nodes = ", G_nodes, " Edges = ",G_edges)
 
 # convert the NetworkX graph to a gexf file (Graph Exchange XML Format) and store it in our file directory
-nx.write_gexf(G, "./data/badger-orgs.gexf")
+nx.write_gexf(G, "./data/badger-mints.gexf")
