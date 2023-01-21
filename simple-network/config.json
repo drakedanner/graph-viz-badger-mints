@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "https://www.trybadger.com/",
+    "text": "danner.eth"
+  },
+  "text": {
+    "more": "This network visualization shows members of organizations created using www.trybadger.com. \n\nBadger organization have sub-groups defined by ERC1155 token IDs, but this visualziation ignores that nuance and shows all holders regardless of token ID.\n\nNote that this visualization does not take into account if these Badges were revoked or forfeited and is only analyzing mints.",
+    "intro": "Visualize token networks created using trybadger.com",
+    "title": "Badger Token Networks"
+  },
+  "legend": {
+    "edgeLabel": "Badge Mint",
+    "colorLabel": "Token Networks",
+    "nodeLabel": "Badger User or Token"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "color",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
