@@ -3,9 +3,9 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "https://github.com/drakedanner/graph-viz-badger-mints/blob/main/badger_logo?raw=true",
+    "file": "https://github.com/drakedanner/graph-viz-badger-mints/blob/main/badger_logo.png?raw=true",
     "link": "https://www.trybadger.com/",
-    "text": "danner.eth"
+    "text": "Try Badger"
   },
   "text": {
     "more": "",
