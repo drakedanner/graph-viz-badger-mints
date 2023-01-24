@@ -23,14 +23,16 @@ query_result_set = sdk.query(
 
 # place nodes into directional graph
 for record in query_result_set.records:
-        G.add_node(record['source']) 
-        G.add_node(record['target'])
-        if G.has_edge(record['source'], record['target']):
+        source = record['source'].replace(chr(0),'')
+        target = record['target']
+        G.add_node(source) 
+        G.add_node(target)
+        if G.has_edge(source, target):
             # edge already exists, increase weight by one
-            G[record['source']][record['target']]['weight'] += 1
+            G[source][target]['weight'] += 1
         else:
             # add new edge with weight 1
-            G.add_edge(record['source'], record['target'], weight = 1)
+            G.add_edge(source, target, weight = 1)
 
 # print values
 G_nodes = G.number_of_nodes()
